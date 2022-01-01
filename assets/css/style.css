@@ -13,6 +13,7 @@
 
 body {
     color: var(--maroon);
+    background: var(--grey);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,7 +36,7 @@ header h1 {
     font-weight: bold;
     font-size: 46px;
     margin: 0;
-    padding-left: 400px;
+    padding-left: 30px;
     align-items: center;
     color: var(--blue);
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -102,3 +103,38 @@ footer a {
     color: var(--blue);
     padding: 5px;
 }
+
+/* About Me section */
+
+#about-me {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+#about-me h2 {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: var(--blue);
+    padding: 2%;
+    border-right: 2px solid var(--dark-blue);
+}
+
+.info {
+    flex-direction: column;
+}
+
+#about-me p {
+    font-size: 20px;
+    width: 675px;
+    padding: 37px;
+}
+
+.personal-image {
+    margin: 30px;
+    height: 600px;
+    float: right
+}
+
