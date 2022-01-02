@@ -165,15 +165,35 @@ footer a {
     display: flex;
     max-width: 1100px;
     flex-direction: column;
+    padding: 20px;
 }
 
 .run-buddy img {
     max-width: 1000px;
+    padding: 15px;
 }
 
 .run-buddy h3 {
     display: flex;
     justify-content: center;
     font-size: 35px;
+    border-bottom: 2px solid var(--dark-blue);
+}
+
+.horiseon {
+    display: flex;
+    max-width: 550px;
+    flex-direction: column;
+    padding: 20px;
+}
+.horiseon img {
+    max-width: 500px;
+    padding: 15px;
+}
+
+.horiseon h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
     border-bottom: 2px solid var(--dark-blue);
 }
