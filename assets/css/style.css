@@ -76,9 +76,8 @@ header nav ul li a:hover {
 
 footer {
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -86,10 +85,10 @@ footer h2 {
     display: flex;
     align-items: center;
     border-right: 2px solid var(--dark-blue);
-    padding: 45px;
+    padding: 25px 15px;
     color: var(--blue);
-    font-size: 50px;
-    margin: 0;
+    font-size: 41px;
+    min-width: 5em;
 }
 
 footer div {
@@ -112,7 +111,6 @@ footer a {
 
 #about-me {
     display: flex;
-    flex-wrap: wrap;
 }
 
 #about-me h2 {
@@ -120,8 +118,10 @@ footer a {
     align-items: center;
     font-size: 50px;
     color: var(--blue);
-    padding: 75px;
+    padding: 10px;
     border-right: 2px solid var(--dark-blue);
+    min-width: 5em;
+    margin: 2px;
 }
 
 .info {
@@ -130,8 +130,8 @@ footer a {
 
 #about-me p {
     font-size: 20px;
-    width: 675px;
-    padding: 37px;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 .personal-image {
@@ -146,7 +146,6 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     padding: 10px 0;
-    justify-content: space-between; 
 }
 
 #projects h2 {
@@ -154,8 +153,10 @@ footer a {
     align-items: center;
     font-size: 50px;
     color: var(--blue);
-    padding: 91px;
+    padding: 25px;
     border-right: 2px solid var(--dark-blue);
+    min-width: 5em;
+    margin: 2px;
 }
 
 .project-demo {
@@ -181,7 +182,7 @@ footer a {
 }
 
 .run-buddy img {
-    max-width: 1000px;
+    max-width: 100%;
     padding: 15px;
 }
 
@@ -198,6 +199,7 @@ footer a {
     align-items: center;
     justify-content: space-between;
 }
+
 .horiseon a {
     text-decoration: none;
     color: var(--blue);
@@ -219,11 +221,12 @@ footer a {
     display: flex;
     max-width: 550px;
     flex-direction: column;
-    padding: 85px;
+    padding: 20px;
     margin: 0;
 }
+
 .project_img {
-    max-width: 500px;
+    max-width: 100%;
     padding: 15px;
 }
 
@@ -234,72 +237,110 @@ footer a {
     border-bottom: 2px solid var(--dark-blue);
 }
 
-@media screen and (max-width: 980px) {
 
-   header {
-       padding: 0;
-       justify-content: center;
-       position: relative;
-   } 
+@media screen and (max-width: 780px) {
 
-   header h1 {
-       width: 100%;
-       text-align: center;
-   }
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+    }
 
-   header nav ul {
-       margin-top: 15px;
-       width: 100%;
-       justify-content: center;
-   }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
 
-   header nav ul li a {
-       font-size: 25px;
-   }
+    header nav ul {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
 
-   footer h2 {
-       text-align: center;
-       border: none;
-   }
+    header nav ul li a {
+        font-size: 25px;
+    }
 
-   #about-me {
-       width: 100%;
-       justify-content: space-around;
-   }
+    footer {
+        flex-direction: column;
+        padding: 25px 0;
 
-   #about-me h2 {
-       text-align: center;
-       border-bottom: 2px solid var(--dark-blue);
-       border-right: none;
-       padding: 45px;
-   }
+    }
 
-   #about-me .info {
-       text-align: center;
+    footer h2 {
+        justify-content: center;
+        text-align: center;
+        border-right: none;
+        border-bottom: 2px solid var(--dark-blue);
+        padding: 2px 45px;
+        margin: auto;
+    }
 
-   }
+    .personal-image {
+        max-width: 250px;
+    }
 
-   #projects {
-       width: 100%;
-       justify-content: space-around;
-   }
+    .contact-links {
+        padding: 15px;
+    }
 
-   #projects h2 {
-       text-align: center;
-       border-bottom: 2px solid var(--dark-blue);
-       border-right: none;
-       padding: 45px;
-   }
+    #about-me {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
 
-   .project-demo {
-       max-width: 80%;
-   }
+    }
 
-   .run-buddy img {
-       width: 580px;
-   }
+    #about-me h2 {
+        text-align: center;
+        border-bottom: 2px solid var(--dark-blue);
+        border-right: none;
+        padding: 2px 45px;
+        justify-content: center;
+        margin: auto;
+    }
 
-   .minor-projects {
-       flex-direction: column;
-   }
+    #about-me .info {
+        text-align: center;
+        margin: 15px;
+    }
+
+    #projects {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #projects h2 {
+        justify-content: center;
+        border-bottom: 2px solid var(--dark-blue);
+        border-right: none;
+        padding: 5px 45px;
+        margin: auto;
+    }
+
+    .project-demo {
+        max-width: 100%;
+    }
+
+    .minor-projects {
+        flex-direction: column;
+    }
+
+    .next-project {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
 }
