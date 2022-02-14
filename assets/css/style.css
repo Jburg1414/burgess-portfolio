@@ -217,6 +217,15 @@ footer a {
     margin: 0;
 }
 
+.numchecker a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.numchecker a:hover {
+    color: var(--dark-blue);
+}
+
 .numchecker {
     display: flex;
     max-width: 550px;
